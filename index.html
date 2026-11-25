@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      var theme = 'dark';
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var fromLink = params.get('theme');
+        theme = (fromLink === 'light' || fromLink === 'dark')
+          ? fromLink
+          : (localStorage.getItem('awt-theme') || 'dark');
+        localStorage.setItem('awt-theme', theme);
+      } catch (e) { }
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.classList.toggle('theme-light', theme === 'light');
+    })();
+  </script>
+  <meta name="description"
+    content="Shorim Khan — Full-Stack Web Developer, Graphic Designer and CEO of Alhaf Weborix Technology.">
+  <title>Home | Alhaf Weborix Technology</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="home-page">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-logo-slot"
+        title="Add your company logo"><span>＋</span></span><span><b>Alhaf Weborix<br>Technology</b><small>Innovate ·
+          Build · Grow</small></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav">
+      <a class="active" href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a
+        href="certificates.html">Certificates</a><a href="cv.html">My CV</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions"><button class="theme-toggle" type="button">☀ Light</button><a
+        class="button button-small" href="contact.html">Let's Talk ↗</a></div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="availability"><i></i><span>Available for Freelance & Full-Time</span></div>
+        <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span class="gradient-text">Shorim Khan</span></h1>
+        <h2><span class="role-pill">CEO</span> &amp; Full-Stack Web Developer</h2>
+        <p class="lead">Building innovative digital solutions with modern technologies and creative designs.</p>
+        <div class="hero-actions"><a class="button" href="projects.html">Explore My Work <span>→</span></a><a
+            class="button button-outline" href="cv.html">View My CV ↓</a></div>
+        
+<div class="tech-strip">
+
+  <div class="tech-placeholder">
+    <span class="logo-circle">
+      <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5">
+    </span>
+    <small>HTML5</small>
+  </div>
+
+  <div class="tech-placeholder">
+    <span class="logo-circle">
+      <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS3">
+    </span>
+    <small>CSS3</small>
+  </div>
+
+  <div class="tech-placeholder">
+    <span class="logo-circle">
+      <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript">
+    </span>
+    <small>JavaScript</small>
+  </div>
+
+  <div class="tech-placeholder">
+    <span class="logo-circle">
+      <img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP">
+    </span>
+    <small>PHP</small>
+  </div>
+
+  <div class="tech-placeholder">
+    <span class="logo-circle">
+      <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React">
+    </span>
+    <small>React</small>
+  </div>
+
+  <div class="tech-placeholder">
+    <span class="logo-circle">
+      <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
+    </span>
+    <small>Python</small>
+  </div>
+  <div class="tech-placeholder">
+    <span class="logo-circle">
+      <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
+    </span>
+    <small>Python</small>
+  </div>
+
+</div>
+
+        <p class="asset-note">Add your official technology logo images in the logo slots when ready.</p>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="globe" aria-label="Animated globe">
+          <img src="assets/image/globe.png" alt="Alhaf Weborix Technology Global Network" class="globe-img">
+        </div>
+        <div class="floating-card"><b>Full-Stack Developer</b>
+          <div class="skill-cycle" id="skillCycle">Web Development</div><small>Creative digital solutions</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics container">
+      <div class="metric"><span class="metric-icon">🎓</span>
+        <div><strong>8+</strong><small>Professional Courses</small></div>
+      </div>
+      <div class="metric"><span class="metric-icon">💼</span>
+        <div><strong>5+</strong><small>Real Projects</small></div>
+      </div>
+      <div class="metric"><span class="metric-icon">🏆</span>
+        <div><strong>1st</strong><small>Position in G.D.</small></div>
+      </div>
+      <div class="metric"><span class="metric-icon">⭐</span>
+        <div><strong>100%</strong><small>Dedication</small></div>
+      </div>
+      <blockquote><span>“</span>
+        <p>Turning Ideas into Reality<br>with Technology</p><cite>— Shorim Khan —</cite>
+      </blockquote>
+    </section>
+
+    <section class="home-links container">
+      <a class="feature-card" href="about.html"><span class="feature-icon">◉</span>
+        <h3>About Me</h3>
+        <p>My journey, skills and professional background.</p><b>Know More →</b>
+      </a>
+      <a class="feature-card" href="projects.html"><span class="feature-icon">⌘</span>
+        <h3>My Projects</h3>
+        <p>Explore my web development and design work.</p><b>View Projects →</b>
+      </a>
+      <a class="feature-card" href="certificates.html"><span class="feature-icon">✧</span>
+        <h3>Certificates</h3>
+        <p>Courses, training and achievements.</p><b>View Certificates →</b>
+      </a>
+      <a class="feature-card" href="cv.html"><span class="feature-icon">▤</span>
+        <h3>My CV / Resume</h3>
+        <p>Review my professional profile and experience.</p><b>View CV →</b>
+      </a>
+    </section>
+
+    <section class="section-block container">
+      <div class="section-heading">
+        <p class="eyebrow">MY TOOLKIT</p>
+        <h2>Technologies & Creative Tools</h2>
+        <p>Dedicated logo slots — add your preferred image files when ready.</p>
+      </div>
+      <div class="logo-grid">
+        <div class="logo-slot">
+          <div class="logo-circle large">HTML</div><b>HTML5</b>
+        </div>
+        <div class="logo-slot">
+          <div class="logo-circle large">CSS</div><b>CSS3</b>
+        </div>
+        <div class="logo-slot">
+          <div class="logo-circle large">JS</div><b>JavaScript</b>
+        </div>
+        <div class="logo-slot">
+          <div class="logo-circle large">PHP</div><b>PHP</b>
+        </div>
+        <div class="logo-slot">
+          <div class="logo-circle large">R</div><b>React</b>
+        </div>
+        <div class="logo-slot">
+          <div class="logo-circle large">Py</div><b>Python</b>
+        </div>
+        <div class="logo-slot">
+          <div class="logo-circle large">L</div><b>Laravel</b>
+        </div>
+        <div class="logo-slot">
+          <div class="logo-circle large">Ps</div><b>Photoshop</b>
+        </div>
+        <div class="logo-slot">
+          <div class="logo-circle large">Ai</div><b>Illustrator</b>
+        </div>
+        <div class="logo-slot">
+          <div class="logo-circle large">C</div><b>Canva</b>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-main container">
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-logo-slot"
+            title="Add your company logo"><span>＋</span></span><span><b>Alhaf Weborix<br>Technology</b><small>Innovate ·
+              Build · Grow</small></span></a>
+        <p>Digital solutions through technology, creativity and innovation.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4><a href="about.html">About</a><a href="projects.html">Projects</a><a
+          href="certificates.html">Certificates</a><a href="cv.html">My CV</a>
+      </div>
+      <div>
+        <h4>Explore</h4><a href="contact.html">Contact</a><a href="mailto:YOUR_EMAIL@example.com">Email</a><a href="#"
+          class="whatsapp-link">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom container"><span>© <span id="year"></span> Alhaf Weborix Technology. All rights
+        reserved.</span><span>Designed &amp; developed by Shorim Khan</span></div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
